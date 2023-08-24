@@ -1,0 +1,35 @@
+*{
+    padding: 0%;
+    margin: 0%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+@import './assets/style/common.scss';
+@import './assets/style/mixin.scss';
+@import './assets/style/variable.scss';
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+        ::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, 1) 0%,
+											  rgba(0, 0, 0, 1) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+                                              
+}

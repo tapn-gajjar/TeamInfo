@@ -1,0 +1,107 @@
+@import '../../app.scss';
+.AboutPage-container{
+    padding: 0 100px;
+    @include tablet{
+        padding: 0 20px;
+    }
+    .aboutPage-heading{
+        text-align: center;
+        padding: 50px 0px;
+        
+         h1{
+            font-family: $TitilliumWeb-Regular;
+            color: $font-gray;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+    .BackendTeam-wrap{
+        .backend-heading{
+            @include mobile{
+                text-align: center;
+            }
+            h2{
+                padding: 0 20px;
+                font-family: $TitilliumWeb-Regular;
+                color: $black;
+                font-weight: 700;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+         
+        }
+        .backend-card-section{
+            padding: 100px 0;
+            display: flex;
+            // justify-content:space-evenly;
+            flex-wrap: wrap;
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);  
+            // grid-template-rows: 1fr;
+            // grid-column-gap: 0px;
+            // grid-row-gap: 30px;
+            @include tablet{
+                // justify-content: center;
+                
+            }
+            @include mobile{
+                justify-content: center;
+                padding: 0;
+            }
+        .backend-card-wrap{
+            margin: 20px;
+            text-align: center;
+            border-radius: 15px;
+            width: 300px;
+            background-color: $ofWhite;
+            padding: 20px;
+
+            .backendCard-img{
+               
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+               .img-wrap{
+                height: 100px;
+                width: 100px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50px;
+                    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                }
+               }
+               
+            }
+            .backend-card-name{
+                padding: 10px 0;
+                p{
+                    font-size: 1.1rem;
+                    font-family: $TitilliumWeb-Bold;
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+            .backend-field-name{
+                padding: 5px 0;
+                p{
+                    font-size: 1.1rem;
+                    font-family: $TitilliumWeb-Bold;
+                    color: $orange-color;
+                    font-weight: 500;
+                }
+            }
+            .backend-card-description{
+                p{
+                    font-size: .9rem;
+                    font-family: $TitilliumWeb-Regular;
+                    color: $font-gray;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    }
+}

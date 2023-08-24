@@ -1,0 +1,179 @@
+@import "../../../app.scss";
+.signUP-container {
+  display: flex;
+  justify-content: center;
+  .signUp-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+    .signUp-box {
+      transition: 2s;
+      background-color: $White;
+      border-radius: 10px;
+      // box-shadow: 25px 25px 25px 25px rgba(249, 248, 253, 1);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+      @include midmobile {
+        padding: 40px 20px;
+      }
+      .signUpText-wrap {
+        text-align: center;
+        padding: 10px 0;
+        width: 60%;
+        h1 {
+          transition: 1s;
+          font-size: 2rem;
+          font-family: $TitilliumWeb-Regular;
+          font-weight: 600;
+          color: $black;
+          // margin-bottom: 0;
+          color: $font-gray;
+        }
+      }
+      .select-user-wrap {
+        width: 70%;
+        padding-top: 20px;
+        @include midmobile {
+          width: 100%;
+        }
+        p {
+          transition: 1s;
+          color: $font-gray;
+          font-family: $TitilliumWeb-Regular;
+          font-size: 1rem;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        .select-wrap {
+          width: 100%;
+          border: 1px solid $font-gray;
+          border-radius: 10px;
+          padding: 15px 20px;
+
+          .select-option {
+          }
+        }
+      }
+      .email-wrap {
+        padding-top: 20px;
+        width: 70%;
+        @include midmobile {
+          width: 100%;
+        }
+        p {
+          transition: 1s;
+          color: $font-gray;
+          font-family: $TitilliumWeb-Regular;
+          font-size: 1rem;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        // passSection
+        .pass-input-box {
+          position: relative;
+          .eyeImage {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+        }
+        input {
+          width: 100%;
+          border: 1px solid $font-gray;
+          border-radius: 10px;
+          padding: 15px 20px;
+        }
+      }
+      .yourpass-hide {
+        display: flex;
+        justify-content: space-between;
+        p {
+          margin-bottom: 5px;
+        }
+      }
+      .hide-wrap {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .signUp-box:hover {
+      background-color: $ofWhite;
+      box-shadow: none;
+    }
+    .signUp-box:hover > .signUpText-wrap h1 {
+      color: $black;
+    }
+    .signUp-box:hover > .email-wrap p {
+      color: $black;
+    }
+
+    .signUp-box:hover > .select-user-wrap p {
+      color: $black;
+    }
+
+    .signUP-btn-wrap {
+      width: 70%;
+      @include midmobile {
+        width: 100%;
+      }
+      .signUp-btn {
+        width: 100%;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        background-color: $orange-color;
+        color: $White;
+        font-family: $TitilliumWeb-Regular;
+        font-size: 1rem;
+        border-radius: 50px;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+  .backToLogin-wrap {
+    width: 50%;
+    background-color: $White;
+    border-radius: 10px;
+    // box-shadow: 25px 25px 25px 25px rgba(249, 248, 253, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    padding: 40px;
+    transition: 1s;
+    cursor: pointer;
+    @include mobile {
+      width: 100%;
+      
+    }
+    p {
+      transition: 1s;
+      text-align: center;
+      font-size: 1rem;
+      // margin-bottom: 0;
+      font-family: $TitilliumWeb-Regular;
+      font-weight: 600;
+      color: $font-gray;
+    }
+  }
+  .backToLogin-wrap:hover {
+    background-color: $ofWhite;
+    // transition: 2s;
+    box-shadow: none;
+  }
+  .backToLogin-wrap:hover > p {
+    color: $black;
+    // transition: 1s;
+  }
+}

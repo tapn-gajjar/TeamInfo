@@ -1,0 +1,22 @@
+deploy-job:      
+  stage: deploy 
+  tags:
+    - "team-information"  
+  variables:
+    build_path: "/var/www/html/builds/Z-YKQkzu/0/team-information/team-info-frontend/"
+    Target_path: "/var/www/html/team-info-frontend/"   
+  script:
+    - echo "Deploying application..."
+    - cd $build_path
+    - nvm install 14.18.1
+    - nvm use 14.18.1
+    - export NODE_OPTIONS="--max-old-space-size=16192"
+    - npm install 
+    - CI= npm run build
+    - rsync -p -av $build_path/build/* $Target_path/
+    - echo "Application successfully deployed."
+    - rm -rf /var/www/html/builds/Z-YKQkzu/
+    
+  only:
+    - "master"    
+

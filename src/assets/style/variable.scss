@@ -1,0 +1,49 @@
+// fonts
+@import '../fonts/font.scss';
+
+$TitilliumWeb-Italic:'TitilliumWeb-Italic';
+$TitilliumWeb-ExtraLight:'TitilliumWeb-ExtraLight';
+$TitilliumWeb-Black:'TitilliumWeb-Black';
+$TitilliumWeb-BoldItalic:'TitilliumWeb-BoldItalic';
+$TitilliumWeb-Bold:'TitilliumWeb-Bold';
+$TitilliumWeb-ExtraLightItalic: 'TitilliumWeb-ExtraLightItalic';
+$TitilliumWeb-LightItalic: 'TitilliumWeb-LightItalic';
+$TitilliumWeb-Regular:'TitilliumWeb-Regular';
+$TitilliumWeb-SemiBold:'TitilliumWeb-SemiBold';
+$TitilliumWeb-SemiBoldItalic: 'TitilliumWeb-SemiBoldItalic';
+$TitilliumWeb-Italic: 'TitilliumWeb-Italic';
+$TitilliumWeb-Light:'TitilliumWeb-Light';
+
+// colors
+$primary-color:#f9eecf;
+$White:#FFFFFF;
+$black:#000000;
+$card-blue:#73D2DE;
+$card-lightgreen:#7FD1AE;
+$carouselArrow-green:#00a475;
+$light-gray:#ece9e9;
+$font-gray:#c3c3c3;
+$orange-color:#ED8427;
+$ofWhite:#F9F8FD;
+
+
+
+// media q
+$xxs-min-width:425px;
+$xxxs-max-width:425px;
+$xxs-max-width: 576px;
+$xs-min-width: 577px;
+$xs-max-width: 768px;
+//max-width changed from 767 to 768 for about section
+$sm-min-width: 768px;
+$sm-max-width: 991px;
+$md-min-width: 992px;
+$mdd-min-width: 1025px;
+$mdd-max-width: 1024px;
+$md-max-width: 1199px;
+$lg-min-width: 1200px;
+$lg-max-width: 1440px;
+$xlg-min-width: 1441px;
+$xxlg-min-width: 1800px;
+$xxlg-max-width: 1920px;
+$xlg-max-width: 1081px;

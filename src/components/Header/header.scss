@@ -1,0 +1,132 @@
+@import '../../app.scss';
+
+.header-container{
+    padding: 20px 100px;
+    background-color: $ofWhite !important;
+    @include tablet{
+        padding: 20px 50px!important;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .head-logo-wrap{
+            width: 170px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            
+            a{
+                color: $black;
+                font-family: $TitilliumWeb-Regular ;
+                font-weight: 700;
+                margin: 0 10px;
+                text-align: center;
+                padding: 10px 10px ;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                @include mobile{
+                    font-size: 2rem;
+                }
+            }
+            a:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $orange-color;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+                
+              }
+              a:hover:after { 
+                width: 100%; 
+                left: 0; 
+               
+              }
+            .btn-nav{
+               
+                padding: 5px;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: $black;
+                visibility: hidden;
+                opacity: 0;
+                font-size: 1.8rem;
+                @include mobile{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            .nav-close-btn{
+                
+                @include mobile{
+                    position:absolute;
+                    top: 2rem;
+                    right: 2rem;
+                }
+            }
+          @include mobile{
+           position: fixed;
+           top: 0;
+           left: 0;
+           height: 100%;
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           gap: 1rem;
+           background-color: $ofWhite !important;
+           transition: 1s;
+            transform: translateX(100vw);
+            z-index: 9999999; 
+
+        }
+          
+        }
+        .btn-nav{
+            display: none;
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: $black;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.8rem;
+            @include mobile{
+                visibility: visible;
+                opacity: 1;
+                display: block;
+            }
+        }
+       
+    }
+    header .responsive_nav{
+        
+        @include mobile{
+        transform: none;
+        }
+    }
+  
+}
+
+
+
+

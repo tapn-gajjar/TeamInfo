@@ -1,0 +1,170 @@
+@import '../../../app.scss';
+.contactUs-container{
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, hsla(205, 28%, 87%, 1) 0%, hsla(26, 100%, 95%, 1) 51%, hsla(205, 28%, 87%, 1) 100%);
+    @include mobile{
+       padding: 0;
+    }
+    .contactUs-section{
+       
+        width: 60%;
+        background-color: $White;
+        position: relative;
+        border-radius: 25px;
+        @include tablet{
+            width: 80%;
+        }
+        @include mobile{
+            width: 100%;
+            border-radius: 0;
+        }
+        
+        .contactBackground{
+            height: 100%;
+            width: 20%;
+            background-color: $orange-color;
+            position: absolute;
+            right: 0;
+            border-radius: 0 25px 25px 0;
+            z-index: 99999;
+            @include mobile{
+                 display: none;
+            }
+            
+        }
+        .contactUsAndGoogleMap{
+            
+            z-index: 11;
+            width: 100%;
+            padding: 30px 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 50px;
+            grid-row-gap: 0px;
+
+            @include mobile{
+                 
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                padding: 20px;
+                grid-row-gap: 70px;
+            }
+            .contactUs-box{
+                .contactUs-heading{
+                    padding-bottom: 20px;
+                    p{
+                        font-size: 3rem;
+                        font-family: $TitilliumWeb-Bold;
+                        font-weight: 700;
+                        color: $black;
+                        // margin-bottom: 0;
+                        span{
+                            color: $orange-color;
+                        }
+                        @include mobile{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .heading-description{
+                    p{
+                        font-family: $TitilliumWeb-Light;
+                        font-size: .8rem;
+                        color: $black;
+                        // margin-bottom: 0;
+                    }
+                }
+                .phone-wrap{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    padding: 10px 0px;
+                    // img{
+                        
+                    // }
+                    // p{
+
+                    //     font-family: $TitilliumWeb-Light;
+                    //     cursor: pointer;
+                        // margin-bottom: 0;
+                    // }
+                    input{
+                        width: 100%;
+                        border: 1px solid $font-gray;
+                        border-radius: 10px;
+                        padding: 15px 20px;
+                    }
+
+                }
+                .gmail-wrap{
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    // img{
+                        
+                    // }
+                    // a{
+                    //     font-family: $TitilliumWeb-Light;
+                    //     color: $black;
+                    //     text-decoration: none;    
+                    // }
+                    input{
+                        width: 100%;
+                        border: 1px solid $font-gray;
+                        border-radius: 10px;
+                        padding: 15px 20px;
+                    }
+                }
+                .input-wrap{
+                    padding: 10px 0;
+                    textarea{
+                        width: 100%;
+                       resize: none;
+                       padding: 10px;
+                       font-family: $TitilliumWeb-Regular;
+
+                    
+                       border: 1px solid $font-gray;
+                       border-radius: 10px;
+                      
+                    }
+                    
+                }
+                .submit-btn-wrap{
+                    padding: 10px 0;
+                    .submit-btn{
+                        width: 100%;
+                        background-color: $orange-color;
+                        color: $White;
+                        font-family: $TitilliumWeb-Regular;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        padding: 10px 40px;
+                        border: none;
+                        border-radius: 25px;
+                    }
+                }
+
+            }
+            .googleMap-box{
+                
+                .map{
+                   border-radius: 0 25px 25px 0;
+                    position: relative;
+                    z-index: 999999;
+                    width: 100%;
+                    
+                    
+                }
+            }
+        }
+    }
+    
+}

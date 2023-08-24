@@ -1,0 +1,158 @@
+@import "../../app.scss";
+.Footer-container {
+ 
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    @include mobile {
+        padding: 0;
+      }
+    .footer-box {
+      padding: 20px;
+      .logo-wrap {
+        // height: 85px;
+        width: 200px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .footer-heading {
+        padding: 24px 0;
+        h4 {
+          font-family: $TitilliumWeb-Bold;
+          color: $black;
+          font-size: 1rem;
+          
+        }
+      }
+      .footer-email-wrap {
+        padding: 30px 0;
+        p {
+          font-family: $TitilliumWeb-Regular;
+          
+          font-size: 1rem;
+        }
+      }
+      .addres-wrap {
+        h4 {
+          padding-bottom: 10px;
+          font-family: $TitilliumWeb-Regular;
+        }
+        p {
+          font-family: $TitilliumWeb-Regular;
+        }
+      }
+      .footer-call-wrap {
+        padding: 20px 0;
+        h4 {
+          padding-bottom: 10px;
+          font-family: $TitilliumWeb-Regular;
+        }
+        p {
+          font-family: $TitilliumWeb-Regular;
+        }
+      }
+      .footer-logo-text {
+        padding: 30px 0;
+        p {
+          font-family: $TitilliumWeb-Regular;
+        }
+      }
+      .footer-pages {
+        padding: 30px 0;
+        p {
+          padding-bottom: 20px;
+          font-family: $TitilliumWeb-Regular;
+        }
+        p:hover{
+            color: $card-blue;
+            transform: translateX(4px);
+            cursor: pointer;
+        }
+      }
+    }
+    .box1 {
+      width: 25%;
+      @include tablet {
+        width: 50%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .box2 {
+      width: 15%;
+      @include tablet {
+        width: 50%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .box3 {
+      width: 20%;
+      @include tablet {
+        width: 30%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .box4 {
+      width: 15%;
+      @include tablet {
+        width: 30%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .box5 {
+      width: 25%;
+      @include tablet {
+        width: 40%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  .copyRight-layout{
+    background-color: $ofWhite;
+   .copyRight-containt{
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            padding: 30px 30px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .allRight-wrap{
+            p{
+                font-family: $TitilliumWeb-Bold;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+        .designBy-wrap{
+            p{
+                font-family: $TitilliumWeb-Bold;
+                font-weight: 600;
+                font-size: 1rem;
+                span{
+                    color: $orange-color;
+            }}
+        }
+   }
+  }
+}

@@ -1,0 +1,275 @@
+@import '../../app.scss';
+.landingPage-container{
+    display: flex;
+   @include mobile{
+    flex-direction: column;
+   }
+   
+    .landing-left{
+        width: 25%;
+        
+        @include mobile{
+            width: 100%;
+            }
+        .makingMillions-text{
+            height: 100%;
+            background: linear-gradient(180deg,rgba(27,83,147,1) 0%, rgba(0,177,141,1) 84%);
+            padding:0px 30px;
+            display:flex ;
+            align-items: center;
+            @include mobile{
+                padding: 10px ;
+                margin-bottom: 0;
+            }
+            p{
+                font-family: $TitilliumWeb-Regular;
+                color: $White;
+                font-weight: 500;
+                line-height: 30px;
+                font-size: 1.3rem;
+                
+                @include mobile{
+                    // margin-bottom: 0;
+                }
+            }
+        }
+       
+    }
+    .linkPages-box{
+        width: 75%;
+        @include mobile{
+        width: 100%;
+        }
+        .card-section{
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+             grid-column-gap: 0px;
+             grid-row-gap: 0px;
+             display: flex;
+             background: url('../../assets/images/background-main.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+              
+            z-index: 99999;
+            position: relative;
+            background-color: rgba(0, 0, 0, .9);
+            @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+            @include smallmobile{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
+            .card-wrap{
+                background-color: $card-lightgreen;
+                padding: 60px;
+                opacity: 0;
+                transition: .5s;
+                z-index: 999999;
+                .card-heading{
+                    h2{
+                        color: $White;
+                        font-family:$TitilliumWeb-Regular;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        
+                       
+                    }
+                }
+                .card-description{
+                    p{
+                        color: $White;
+                        font-family:$TitilliumWeb-Regular;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        padding: 20px 0;
+                    }
+                }
+                .aboutUs-btn{
+                    color: $White;
+                    border: 1px solid white;
+                    background-color: $card-lightgreen;
+                    width: 100%;
+                    padding: 10px;
+                }
+                .btn-blue{
+                    background-color: $card-blue;
+                }
+            }
+            .background{
+                height: 100%;
+                width: 100%;
+                top: 0;
+                position: absolute;
+                z-index: -1;
+            }
+            .card-wrap:nth-child(1):hover ~ .background{
+                background: url('../../assets/images/background-image1.jpg');
+                background-color: rgba(0, 0, 0, .5);
+                transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                
+            }
+            .card-wrap:nth-child(2):hover ~ .background{
+                background: url('../../assets/images/background-image2.jpg');
+                transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                
+            }
+            .card-wrap:nth-child(3):hover ~ .background{
+               background: url('../../assets/images/background-image3.jpg');
+               transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+            background-position: center center;
+            }
+            .card-wrap:nth-child(4):hover ~ .background{
+                background: url('../../assets/images/background-image4.jpg');
+                transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+            background-position: center center;
+            }
+            .card-wrap:nth-child(5):hover ~ .background{
+               background: url('../../assets/images/background-image5.jpg');
+               transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+            background-position: center center;
+            }
+            .card-wrap:nth-child(6):hover ~ .background{
+                background: url('../../assets/images/background-image6.jpg');
+                transition: .5s;
+                background-size: cover;
+                background-repeat: no-repeat;
+            background-position: center center;
+              
+    
+            }
+            .blue-card
+            {
+                background-color: $card-blue;
+            }
+            .card-wrap:focus,.card-wrap:hover{
+                opacity: 1;   
+            }
+        }
+        .box-section{
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+             grid-template-rows: repeat(2, 1fr);
+             grid-column-gap: 0px;
+             grid-row-gap: 0px;
+             display: flex;
+             position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+            @include smallmobile{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
+        .box-wrap{
+            z-index: 999;
+            position: relative;
+            .box-containt{
+                height: 100%;
+                width: 100%;
+                border-right: 1px solid rgba(255, 255, 255, 0.505); 
+                border-bottom: 1px solid rgba(255, 255, 255, 0.505);
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                p{
+                    color: $White;
+                    font-family: $TitilliumWeb-Regular;
+                    font-size: 1rem;
+                    font-weight: 900; 
+                }
+            }
+           
+        }
+    }
+    }
+}
+
+.liveUpdateAndCarousel-section{
+    display: flex;
+    background-color: $light-gray;
+    @include mobile{
+        flex-direction: column;
+       }
+    .liveUpdate-wrap{
+        width: 25%;
+        background-color:$card-blue;
+       border-radius: 0  0 10px  0;
+       text-align: center;
+       @include mobile{
+        width: 100%;
+        border-radius: 0;
+     
+        }
+        p{
+            color: $White;
+            font-family: $TitilliumWeb-Regular;
+            font-weight: 600;
+            padding: 14px 0;
+            font-size: 1rem;
+        }
+    }
+    .textCarousel-wrap{
+        width: 75%;
+       
+         @include mobile{
+            width: 100%;
+            }
+            .carousel-wrap{
+                text-align: center;
+       .slideText{
+        padding: 14px 0;
+        color: $card-blue;
+        font-size: 1rem;
+        font-family: $TitilliumWeb-Regular;
+        font-weight: 600;
+       }
+    }
+    }
+    // Carousel-Btns
+     .react-multiple-carousel__arrow--left{
+        background: none;
+        left: 0;
+    }
+    .react-multiple-carousel__arrow--left::before{
+         color: $card-blue; 
+         
+    }
+    .react-multiple-carousel__arrow--left:hover{
+        background-color: $light-gray;
+        
+    }
+    .react-multiple-carousel__arrow--right{
+        background: none;
+        right: 0;
+        
+    }
+    .react-multiple-carousel__arrow--right::before{
+        color: $card-blue;
+    }
+    .react-multiple-carousel__arrow--right:hover{
+        background-color: $light-gray;
+    }
+}

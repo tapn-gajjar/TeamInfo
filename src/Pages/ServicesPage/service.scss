@@ -1,0 +1,112 @@
+@import '../../app.scss';
+.Service-container{
+    padding: 0 100px;
+    @include mobile{
+        padding: 0 40px;
+    }
+    @include smallmobile{
+        padding: 0 20px;
+    }
+    .service-section{
+        .service-heading{
+            text-align: center;
+            padding: 30px 0;
+            h2{
+
+                font-family: $TitilliumWeb-Regular;
+                color: $font-gray;
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+        }
+        .ourVision-wrap{
+            text-align: center;
+            h1{
+                font-family: $TitilliumWeb-Regular;
+                color: $black;
+                font-size: 2.5rem;
+            }
+        }
+        .serviceCard-section{
+            padding: 100px 0;
+           
+            .carousel-wrap{
+              
+            }
+            .service-card{
+                transition: 1s;
+                margin: 30px;
+                text-align: center;
+                // width: 350px;
+                box-shadow: 0px 15px 20px -8px rgba(0,0,0,0.42);
+                padding: 40px;
+                border-radius: 0 0 25px 25px;
+                .service-logo{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                .card-logo-wrap{
+                    height: 100px;
+                    width: 100px;
+                    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+                .card-heading{
+                    padding: 10px 0;
+                    h2{
+                        font-family: $TitilliumWeb-Bold;
+                        font-size: 1.5rem;
+                        color: $black;
+                    }
+                }
+                .card-texts{
+                   
+                    p{
+                        font-family: $TitilliumWeb-Regular;
+                        font-size: 1rem;
+                        color: $black;
+                        padding: 20px 0px;
+                  
+               
+                    }
+                }
+                .card-btn-wrap{
+                    button{
+                        // background-color: $orange-color;
+                        // color: $White;
+                        // border: none;
+                        // font-size: 1.3rem;
+                        // padding: 15px 50px;
+                        // border-radius: 25px;
+                        width: 100%;
+                        cursor: pointer;
+                        padding: 10px;
+                        border: none;
+                        background-color: #ED8427;
+                        color: #FFFFFF;
+                         font-family: "TitilliumWeb-Regular";
+                         font-size: 1rem;
+                        border-radius: 50px;
+                        margin-top: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .service-card:hover{
+                transform: translateY(-20px);
+               
+            }
+        }
+    }
+}
+.react-multiple-carousel__arrow--left{
+    display: none;
+}
+.react-multiple-carousel__arrow--right{
+    display: none;
+}

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'TitilliumWeb-BoldItalic';
+    src: url('./font/TitilliumWeb-BoldItalic.eot');
+    src: url('./font/TitilliumWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-BoldItalic.woff2') format('woff2'),
+        url('./font/TitilliumWeb-BoldItalic.woff') format('woff'),
+        url('./font/TitilliumWeb-BoldItalic.svg#TitilliumWeb-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-ExtraLight';
+    src: url('./font/TitilliumWeb-ExtraLight.eot');
+    src: url('./font/TitilliumWeb-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-ExtraLight.woff2') format('woff2'),
+        url('./font/TitilliumWeb-ExtraLight.woff') format('woff'),
+        url('./font/TitilliumWeb-ExtraLight.ttf') format('truetype'),
+        url('./font/TitilliumWeb-ExtraLight.svg#TitilliumWeb-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Black';
+    src: url('./font/TitilliumWeb-Black.eot');
+    src: url('./font/TitilliumWeb-Black.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-Black.woff2') format('woff2'),
+        url('./font/TitilliumWeb-Black.woff') format('woff'),
+        url('./font/TitilliumWeb-Black.ttf') format('truetype'),
+        url('./font/TitilliumWeb-Black.svg#TitilliumWeb-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('./font/TitilliumWeb-Bold.eot');
+    src: url('./font/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-Bold.woff2') format('woff2'),
+        url('./font/TitilliumWeb-Bold.woff') format('woff'),
+        url('./font/TitilliumWeb-Bold.ttf') format('truetype'),
+        url('./font/TitilliumWeb-Bold.svg#TitilliumWeb-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-ExtraLightItalic';
+    src: url('./font/TitilliumWeb-ExtraLightItalic.eot');
+    src: url('./font/TitilliumWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-ExtraLightItalic.woff2') format('woff2'),
+        url('./font/TitilliumWeb-ExtraLightItalic.woff') format('woff'),
+        url('./font/TitilliumWeb-ExtraLightItalic.ttf') format('truetype'),
+        url('./font/TitilliumWeb-ExtraLightItalic.svg#TitilliumWeb-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-LightItalic';
+    src: url('./font/TitilliumWeb-LightItalic.eot');
+    src: url('./font/TitilliumWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-LightItalic.woff2') format('woff2'),
+        url('./font/TitilliumWeb-LightItalic.woff') format('woff'),
+        url('./font/TitilliumWeb-LightItalic.ttf') format('truetype'),
+        url('./font/TitilliumWeb-LightItalic.svg#TitilliumWeb-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url('./font/TitilliumWeb-Regular.eot');
+    src: url('./font/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-Regular.woff2') format('woff2'),
+        url('./font/TitilliumWeb-Regular.woff') format('woff'),
+        url('./font/TitilliumWeb-Regular.ttf') format('truetype'),
+        url('./font/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url('./font/TitilliumWeb-SemiBold.eot');
+    src: url('./font/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-SemiBold.woff2') format('woff2'),
+        url('./font/TitilliumWeb-SemiBold.woff') format('woff'),
+        url('./font/TitilliumWeb-SemiBold.ttf') format('truetype'),
+        url('./font/TitilliumWeb-SemiBold.svg#TitilliumWeb-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-SemiBoldItalic';
+    src: url('./font/TitilliumWeb-SemiBoldItalic.eot');
+    src: url('./font/TitilliumWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-SemiBoldItalic.woff2') format('woff2'),
+        url('./font/TitilliumWeb-SemiBoldItalic.woff') format('woff'),
+        url('./font/TitilliumWeb-SemiBoldItalic.ttf') format('truetype'),
+        url('./font/TitilliumWeb-SemiBoldItalic.svg#TitilliumWeb-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Italic';
+    src: url('./font/TitilliumWeb-Italic.eot');
+    src: url('./font/TitilliumWeb-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-Italic.woff2') format('woff2'),
+        url('./font/TitilliumWeb-Italic.woff') format('woff'),
+        url('./font/TitilliumWeb-Italic.ttf') format('truetype'),
+        url('./font/TitilliumWeb-Italic.svg#TitilliumWeb-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Light';
+    src: url('./font/TitilliumWeb-Light.eot');
+    src: url('./font/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+        url('./font/TitilliumWeb-Light.woff2') format('woff2'),
+        url('./font/TitilliumWeb-Light.woff') format('woff'),
+        url('./font/TitilliumWeb-Light.ttf') format('truetype'),
+        url('./font/TitilliumWeb-Light.svg#TitilliumWeb-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
